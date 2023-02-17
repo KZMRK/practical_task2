@@ -8,8 +8,8 @@ public class Main {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
-    public static void main( String[] args ) {
-        if (System.getProperty("type").equalsIgnoreCase("double")) {
+    public static void main(String[] args) {
+        if (System.getProperty("type") != null && System.getProperty("type").equalsIgnoreCase("double")) {
             logger.info("Type double is selected using a system variable");
             MultiplicationTable<Double> multiplicationTable = new MultiplicationTable<>(Double.class);
             multiplicationTable.print();

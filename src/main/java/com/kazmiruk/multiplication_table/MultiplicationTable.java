@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultiplicationTable<T extends Number & Comparable<T>> {
+public class MultiplicationTable<T extends Number> {
 
     private final Logger logger = LoggerFactory.getLogger(MultiplicationTable.class);
 

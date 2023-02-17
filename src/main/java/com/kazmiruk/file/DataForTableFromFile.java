@@ -32,17 +32,16 @@ public class DataForTableFromFile {
         min = parseAccordingToType(strMin);
         max = parseAccordingToType(strMax);
         inc = parseAccordingToType(strInc);
-        logger.info("Property values are converted to {} type", cls.getName());
+        logger.info("Property values are converted to {} type", cls.getSimpleName());
     }
 
     private Number parseAccordingToType(String strNum) {
-        if (cls.equals(Integer.class)) {
+
+       if (cls.equals(Integer.class)) {
             return Integer.parseInt(strNum);
         } else {
             return Double.parseDouble(strNum);
-        }
-        //return cls.equals(Integer.class) ? Integer.parseInt(strNum) : Double.parseDouble(strNum);
-    }
+        }}
 
     public Number getMin() {
         return min;
